@@ -12,8 +12,79 @@
   src: url("") format("woff2"), url("") format("woff");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.inter-body {
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  }
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  }
+
 /* ******************************** */
 
 /* Colores */
 
 /* ******************************** */
+
+:root{
+  --btn-color: #FF3000;
+  --body-color: #ECECEC;
+  --title-color: #75210B;
+  --subtitle-color: #812B17;
+  --text-button: #fff;
+  --banda-color: #812B17;
+  --text-color: #000;
+}
+
+body{
+  height: 100vh;
+  color: var(--body-color);
+  
+  
+  .container{
+    display: grid;
+    grid-template-columns: [certificate]auto [main]auto [secondaryText]auto [asideLeft]auto [asideBread]31.25rem [asideRight]auto;
+    grid-template-rows: auto auto auto auto 4.0625rem 1fr;
+  
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  .certificate{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .main__content{
+    grid-column: 1 / 4;
+  }
+
+  .content__btn{
+    grid-column: 2 / 3;
+    grid-row: 4 / -1;
+  }
+ 
+  .btn__discount{
+    display: block;
+  }
+}
+
