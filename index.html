@@ -40,45 +40,54 @@
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <script src="preloader.js"></script>
+    <script defer src="/js/main.js"></script>
   </head>
-  <body>
+  <body inter-body>
 
     <div class="container">
 
       <header class="certificate">
 
+        <ul class="languages__list-items" id="languages__list-items">
+          <li><a class="container__es inter-bold" href="index.html">ES</a></li>
+          <li><a class="container__en inter-bold" href="en.html">EN</a></li>
+          <li><a class="container__sk inter-bold" href="sk.html">SK</a></li>
+        </ul>
+
         <img src="/img/desktop/sello.avif" alt="imagen certificado" class="sello-certificado" id="selloCertificado">
-        <p class="certificado__texto" id="certificadoTexto">Certificamos que este producto es auténtica Sobrasada de Mallorca con Denominación de Origen Protegida. Elaborada siguiendo métodos tradicionales en la isla de Mallorca, garantizamos su calidad superior y sabor único. Sobrasada World se compromete a ofrecer solo lo mejor de nuestra tierra.</p>
+        <p class="certificado__texto inter-body" id="certificadoTexto">Certificamos que este producto es auténtica Sobrasada de Mallorca con Denominación de Origen Protegida. Elaborada siguiendo métodos tradicionales en la isla de Mallorca, garantizamos su calidad superior y sabor único. Sobrasada World se compromete a ofrecer solo lo mejor de nuestra tierra.</p>
       
       </header>
 
-      <main class="main__content" id="main__content">
+      <!-- <main class="main__content" id="main__content"> -->
 
         <img src="/img/desktop/sobrasada-arriba 1.avif" alt="imagen de pan con sobrasada" class="content__image-uno" id="contentImageUno">
-        <h1 class="main__title" id="mainTitle">Sobrasada <span class="main__subtitle" id="mainSubtitle">World</span></h1>
+        <h1 class="main__title inter-light" id="mainTitle">Sobrasada</h1>
+        <h2 class="main__subtitle inter-bold" id="mainSubtitle">World</h2>
         <img src="/img/desktop/sobrasada-abajo 1.avif" alt="imagen de pan con sobrasada" class="content__image-dos" id="contentImageDos">
-        <p class="main__content-seconday" id="mainContentSecondary">Sobrasada World: La auténtica experiencia mallorquina en tu mesa. Desde el corazón de Mallorca, ofrecemos la mejor sobrasada mallorquina, un embutido tradicional con Denominación de Origen. Nuestra pasión por este producto gourmet único nos impulsa a compartirlo con el mundo. Con pedidos online y envíos internacionales, garantizamos la autenticidad de cada sobrasada. Descubre el sabor tradicional y la textura untable de nuestra sobrasada premium. Disfruta de la esencia de Mallorca en cada bocado, con Sobrasada World.</p>
 
-      </main>
+      <!-- </main> -->
+
+
+        <p class="main__content-secondary inter-body" id="mainContentSecondary">Sobrasada World: La auténtica experiencia mallorquina en tu mesa. Desde el corazón de Mallorca, ofrecemos la mejor sobrasada mallorquina, un embutido tradicional con Denominación de Origen. Nuestra pasión por este producto gourmet único nos impulsa a compartirlo con el mundo. Con pedidos online y envíos internacionales, garantizamos la autenticidad de cada sobrasada. Descubre el sabor tradicional y la textura untable de nuestra sobrasada premium. Disfruta de la esencia de Mallorca en cada bocado, con Sobrasada World.</p>
+
+      
 
       <section class="content__btn" id="contentBtn">
 
-        <a href="#" class="btn__discount" id="btnDiscount">Descuento 50%</a>
-        <small class="discount__text" id="discountText">Descuento del 50% de todos nuestros productos en el mes de Febrero</small>
+        <a href="#" class="btn__discount inter-bold" id="btnDiscount">Pedido</a>
+        <small class="discount__text inter-body" id="discountText">Descuento del 50% de todos nuestros productos en el mes de <span class="text__month" id="textMonth"></span></small>
 
       </section>
 
-      <aside class="content__main-image" id="contentMainImage">
 
 
-        <div class="main__color" id="mainColor"></div>
-        <img src="/img/desktop/pan.avif" alt="" class="main__image-bread" id="mainImageBread">
+      <div class="main__color" id="mainColor"></div>
+      <img src="/img/desktop/pancortado.avif" alt="" class="main__image-bread2" id="mainImageBread">
 
-      </aside>
+      
       
      
     </div>
-
   </body>
 </html>
