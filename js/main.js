@@ -1,3 +1,4 @@
+
 const now = new Date();
 const month = now.getMonth();
 
@@ -52,3 +53,8 @@ function detectarNavegador() {
     }
 }
 detectarNavegador();
+
+// const btnOrder = document.getElementById('btnDiscount');
+// btnSend.addEventListener('click', () =>{
+//     window.location.href = 'http:landingUno.html';
+// })

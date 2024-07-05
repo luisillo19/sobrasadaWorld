@@ -101,10 +101,10 @@
 					</h3>
 					<section class="data__name" id="dataName">
 						<label
-							for="name"
+							for="nameInput"
 							id="nameLabel"
 							class="data__name-label inter-body"
-							>Nombre</label
+							>Nombre<span class="asterisk">*</span></label
 						>
 						<input
 							type="text"
@@ -120,10 +120,10 @@
 
 					<section class="data__lastname" id="dataLastname">
 						<label
-							for="name"
+							for="lastnameInput"
 							id="lastnameLabel"
 							class="data__lastname-label inter-body"
-							>Apellido</label
+							>Apellido<span class="asterisk">*</span></label
 						>
 						<input
 							type="text"
@@ -139,10 +139,10 @@
 
 					<section class="data__email" id="dataEmail">
 						<label
-							for="email"
+							for="emailInput"
 							id="emailLabel"
 							class="data__email-label inter-body"
-							>Correo electrónico</label
+							>Correo electrónico<span class="asterisk">*</span></label
 						>
 						<input
 							type="email"
@@ -166,10 +166,10 @@
 					</h3>
 					<section class="data__movil" id="dataMovil">
 						<label
-							for="movil"
+							for="movilInput"
 							id="movilLabel"
 							class="data__movil-label inter-body"
-							>Móvil</label
+							>Móvil<span class="asterisk">*</span></label
 						>
 						<input
 							type="tel"
@@ -177,7 +177,7 @@
 							id="movilInput"
 							name="movil"
 							placeholder="+34-666-666-666"
-							pattern="^\+?\d{0,2}?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+							pattern="[0-9+\-() ]+"
 							maxlength="12"
 							required
 						/>
@@ -185,10 +185,10 @@
 
 					<section class="data__adress" id="dataAdress">
 						<label
-							for="adress"
+							for="adressInput"
 							id="adressLabel"
 							class="data__adress-label inter-body"
-							>Dirección</label
+							>Dirección<span class="asterisk">*</span></label
 						>
 						<input
 							type="text"
@@ -205,10 +205,10 @@
 					<section class="data__city-pc" id="dataCityPc">
 						<div class="data__city" id="dataCity">
 							<label
-								for="city"
+								for="cityInput"
 								id="cityLabel"
 								class="data__city-label inter-body"
-								>Ciudad</label
+								>Ciudad<span class="asterisk">*</span></label
 							>
 							<input
 								type="text"
@@ -223,10 +223,10 @@
 						</div>
 						<div class="data__pc" id="dataPc">
 							<label
-								for="Pc"
+								for="pcInput"
 								id="pcLabel"
 								class="data__pc-label inter-body"
-								>CP</label
+								>CP<span class="asterisk">*</span></label
 							>
 							<input
 								type="number"
@@ -243,7 +243,7 @@
 				</section>
 
 				<section class="form__btn-text" id="formBtnText">
-					<button class="form__btn inter-body" id="formBtn">
+					<button type="submit" class="form__btn inter-body" id="formBtn">
 						Enviar
 					</button>
 					<p class="form__text-data" id="formTextData">
