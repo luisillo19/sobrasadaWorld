@@ -49,6 +49,7 @@
 	--text-button: #fff;
 	--banda-color: #812b17;
 	--text-color: #000;
+	--text-landing-dos: #626262;
 }
 
 body {
@@ -63,7 +64,6 @@ body {
 
 	width: 100%;
 	height: 100%;
-	/* padding-left: 12.1875rem; */
 }
 
 .certificate {
@@ -75,6 +75,10 @@ body {
     grid-row: 1 / 2;
     width: fit-content;
 	padding-left: 30px;
+}
+
+.sello-certificado{
+	padding-left: 40px;
 }
 
 .certificado__texto{
@@ -137,11 +141,6 @@ body {
 	background-color: var(--banda-color);
 }
 
-/* .main__image-bread {
-	grid-column: 4 / 7;
-	grid-row: 3 / 7;
-	transform: rotate(180deg);
-} */
 
 .main__image-bread2{
 	grid-column: 4 / 7;
@@ -213,4 +212,101 @@ a{
 	color: var(--btn-color);
 	transform: scale(1.1);
 	transition: all 0.3s ease-in-out;
+}
+
+
+.btn__continue {
+	display: block;
+	width: 31.25rem;
+	padding: 0.625rem 1.25rem;
+	border-radius: 12px;
+	color: var(--text-button);
+	font-size: 1.375rem;
+	font-weight: 900;
+	background-color: var(--btn-color);
+	text-align: center;
+	font-style: italic;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 5px;
+}
+
+.btn__continue:hover{
+	transform: scale(1.1);
+	color: var(--btn-color);
+	border: 1px solid var(--btn-color);
+	background-color: var(--body-color);
+	transition: all 0.3s ease-in-out;
+}
+
+.main__title-landingdos{
+	text-align: center;
+	font-size: 130.411px;
+	color: var(--title-color);
+	line-height: 1;
+	letter-spacing: 3px;
+	display: inline-block;
+}
+
+.main__subtitle-landingdos{
+
+	font-size: 5.3125rem;
+	color: var(--subtitle-color);
+	line-height: 1.2;
+	align-self: end;
+	text-align: center;
+	padding-bottom: 5px;
+	letter-spacing: 3px;
+	display: inline-block;
+  }
+
+  .confirmation__text-send{
+	color: var(--text-color);
+	font-size: 39.44px;
+	font-style: italic;
+	text-decoration-line: underline;
+  }
+
+  .confirmation__text-email{
+	color: var(--text-landing-dos);
+	text-align: center;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: normal;
+  }
+
+  .container__landing-dos{
+	display: grid;
+	grid-template-columns: [certificate]auto [main]7.5rem [secondaryText]auto [asideLeft]auto [asideBread]21.25rem [asideRight]auto;
+  	grid-template-rows: auto auto auto 4.0625rem 4.0625rem;
+	gap: 10px;
+
+	width: 100%;
+	height: 100%;
+}
+
+.main__content-landingdos{
+	grid-column: 1 / -1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4.375rem;
+}
+
+.content__btn-continue{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.social__networks{
+	display: flex;
+	justify-content: space-between;
+	gap: 4.375rem;
+
+	margin-top: 20px;
 }
